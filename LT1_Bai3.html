@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết chương trình khởi tạo mảng số nguyên.
+    //Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng
+    let arr = [1, 3, 5, 2, 4, 6, 7]
+    let max = arr[0]
+    let count = 0;
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (max < arr[i]) {
+            max = arr[i];
+            count = i;
+        }
+        sum += i;
+    }
+    document.write("Giá trị lớn nhất là: " + max + " và giá trị trung bình là: " + sum/count)
+</script>
+</body>
+</html>
