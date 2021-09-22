@@ -2,12 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>So Sánh Chuỗi</title>
 </head>
 <body>
 <script>
   //Viết một chương trình nhập vào 2 chuỗi,
   //sau đó kiểm tra xem hai chuỗi có giống nhau hay không
+  function soSanhChuoi() {
+      let str1 = "abcd";
+      let str2 = "abc";
+
+      let check = true;
+      if(str1.length != str2.length) {
+          check = false;
+      }
+      else {
+          for(let i = 0; i < str1.length; i++) {
+              if(str1[i] != str2[i]) {
+                  check = false;
+              }
+          }
+      }
+
+      if (check) {
+          alert("Hai chuỗi giống nhau")
+      } else {
+          alert("Hai chuỗi không giống nhau")
+      }
+  }
+  soSanhChuoi();
 </script>
 </body>
 </html>
